@@ -1,6 +1,8 @@
 import React from 'react';
 import './header.styles.scss';
 import { Link } from 'react-router-dom';
+
+//we use this RC as LOGO synatax here to tell create react app that we want a react component that can render an SVG, rather than its filename.
 import { ReactComponent as Logo } from '../../assets/crown.svg';
 
 const Header = () => {
