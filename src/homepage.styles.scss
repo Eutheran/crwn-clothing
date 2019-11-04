@@ -1,0 +1,61 @@
+.homepage {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 80px;
+}
+
+.directory-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+//sass lets us nest css to create scope
+.menu-item {
+  align-items: center;
+  border: 1px solid #000;
+  display: flex;
+  flex: 1 1 auto;
+  height: 240px;
+  justify-content: center;
+  margin: 0 7.5px 15px;
+  min-width: 30%;
+
+  // menu item first child
+  //equivalent of .menu-item:first-child
+  &:first-child {
+    margin-right: 7.5px;
+  }
+
+  // menu item last child
+  //equivalent of .menu-item:last-child
+  &:last-child {
+    margin-left: 7.5px;
+  }
+
+  //applies in the same way it would if we wrote
+  //.menu-item .content
+  .content {
+    align-items: center;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    justify-content: center;
+    padding: 0px 25px;
+
+    .title {
+      color: #4a4a4a;
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      font-weight: lighter;
+    }
+  }
+}
