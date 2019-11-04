@@ -8,6 +8,20 @@
   justify-content: center;
   margin: 0 7.5px 15px;
   min-width: 30%;
+  overflow: hidden;
+
+  &:hover {
+    cursor: pointer;
+
+    & .background-image {
+      transform: scale(1.2);
+      transition: transform 5s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    }
+
+    & .content {
+      opacity: 0.9;
+    }
+  }
 
   &.large {
     height: 380px;
