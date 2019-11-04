@@ -2,7 +2,10 @@ import React from 'react';
 import './menu-item.styles.scss';
 import { withRouter } from 'react-router-dom';
 
-//destructuring our title off our props and setting it to the value of title
+//destructuring our values off our props and setting it to the value of title
+
+//using history push instead of Link to from react-router-dom but gives more dynamic access, we can use it in a component did mount where Link can't be used
+
 const MenuItem = ({ title, imageUrl, size, history, linkUrl, match }) => {
   return (
     <div
