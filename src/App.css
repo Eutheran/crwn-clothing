@@ -7,3 +7,8 @@ a {
   text-decoration: none;
   color: black;
 }
+
+/* includes the padding in an elements total width and height with the ALL selector */
+* {
+  box-sizing: border-box;
+}
